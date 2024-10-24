@@ -91,7 +91,6 @@ console.log(CemberinAlani(15));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let tekraredensayilar;
 
 // 3a çözümü
 
@@ -133,13 +132,30 @@ let besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
-
 let siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b);;
 console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let tekrarlar = {};
+let tekraredensayilar = [];
+
+// 1. döngü: Her sayıyı saymak için
+sayilar.forEach((sayi) => {
+  tekrarlar[sayi] = (tekrarlar[sayi] || 0) + 1;
+});
+
+// 2. döngü: Tekrar eden sayıları bulmak ve string oluşturmak için
+for (let [sayi, adet] of Object.entries(tekrarlar)) {
+  if (adet > 1) {
+    // İstenen formatta string oluştur
+    let mesaj = `${sayi} sayısı ${adet} kere tekrar edilmiştir`;
+    // Stringi tekraredensayilar dizisine ekle
+    tekraredensayilar.push(mesaj);
+  }
+}
+console.log(tekraredensayilar);
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
