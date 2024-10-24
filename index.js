@@ -91,8 +91,7 @@ console.log(CemberinAlani(15));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
-  ucebolunenlerintoplami,
+let ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
   tekraredensayilar;
@@ -116,7 +115,17 @@ console.log(enkucuk);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+let ucetambolunenler = [];
+
+sayilar.forEach((sayi) => {
+if(sayi % 3 === 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+
+console.log(ucetambolunenler);
+
+
 
 // 3c çözümü:
 
