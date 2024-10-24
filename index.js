@@ -91,8 +91,7 @@ console.log(CemberinAlani(15));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let besyuzdenkucuksayilar,
-  siralisayilar,
+let siralisayilar,
   tekraredensayilar;
 
 // 3a çözümü
@@ -124,16 +123,15 @@ if(sayi % 3 === 0) {
 
 console.log(ucetambolunenler);
 
-
 // 3c çözümü:
 
 let ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
-
 console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
-/* kodlar buraya */
+let besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
+console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
 
