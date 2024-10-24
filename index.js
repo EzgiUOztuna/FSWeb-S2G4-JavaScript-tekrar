@@ -91,8 +91,7 @@ console.log(CemberinAlani(15));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let siralisayilar,
-  tekraredensayilar;
+let tekraredensayilar;
 
 // 3a çözümü
 
@@ -135,7 +134,8 @@ console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+let siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b);;
+console.log(siralisayilar);
 
 // 3f çözümü
 
