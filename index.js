@@ -93,7 +93,6 @@ console.log(CemberinAlani(15));
 
 
 // 3a çözümü
-
 let enbuyuk = sayilar[0];
 let enkucuk = sayilar[0];
 
@@ -110,7 +109,6 @@ console.log(enbuyuk);
 console.log(enkucuk);
 
 // 3b çözümü:
-
 let ucetambolunenler = [];
 
 sayilar.forEach((sayi) => {
@@ -122,12 +120,10 @@ if(sayi % 3 === 0) {
 console.log(ucetambolunenler);
 
 // 3c çözümü:
-
 let ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
 console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
-
 let besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 console.log(besyuzdenkucuksayilar);
 
@@ -136,7 +132,6 @@ let siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b);;
 console.log(siralisayilar);
 
 // 3f çözümü
-
 let tekrarlar = {};
 let tekraredensayilar = [];
 
